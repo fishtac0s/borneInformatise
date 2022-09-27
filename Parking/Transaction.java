@@ -1,11 +1,16 @@
 package Parking;
 
 public class Transaction {
+
     private String codeStationnement;
+    private int heureTransaction;
+
+    GregorianCalendar present = new GregorianCalendar();
 
 
     public Transaction() {
         this.codeStationnement = codeStationnement;
+        this.heureTransaction = heureTransaction;
     }
 
     public String getCodeStationnement() {
@@ -19,4 +24,14 @@ public class Transaction {
         }
         return ok;
     }
+
+    public int Tarif(){
+
+        if (verificationCodeStatonnement() == true){
+
+        }
+        return 0;
+    }
+
+
 }
